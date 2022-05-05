@@ -58,7 +58,7 @@ for i , Country in enumerate(Nationality):
       
     # if the participant is not from Greece and doesn't have the qualifications needed for this event send a rejection mail.
    else:
-           rejection_text2 =  "Dear " + str(NameSurname[i]) +   ",\n\nThank you for taking the time to apply for the QSilver Workshop!\nUnfortunately, we won't be proceeding with your application at this time. This workshop will be held in Greek and as a result, you will not be able to understand the lectures and therefore participate.\n\nIf you know the Greek language in a Proficiency Level let us know with an email reply and we will add you to the workshop! In any case, we strongly encourage you to apply for a QSilver held by QGreece or by another QCousin of QWorld in the future which will be given in English or your native language.\n\nSincerely,\nThe QGreece Team" 
+           rejection_text2 =  "Dear " + str(NameSurname[i]) +   ",\n\nThank you for taking the time to apply for the Workshop!\nUnfortunately, we won't be proceeding with your application at this time... " 
            send_email(rejection_text2 , Receivers[i])
            #print( Receivers[i])
            print("Rejection mail sent")
